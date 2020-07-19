@@ -3,6 +3,7 @@ layout: post
 title: "How to make a function implement an interface in Go"
 date: 2020-07-17 11:46:09 -0500
 comments: true
+author: crro
 categories: golang interface functions
 ---
 
