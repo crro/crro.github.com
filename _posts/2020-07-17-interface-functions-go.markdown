@@ -108,7 +108,7 @@ func applyTransformations(cars []Car, transformations []Transform) {
 
 I think this post is long enough already but the last thing I want to mention is that you can use a similar pattern for testing your code. If you are working with a single method interface, using this pattern can save you quite a bit of time! 
 
-If you liked this please subscribe to my newsletter to stay on the loop. I generally write about programming in Go and Python, containers in both English and Spanish.
+If you liked this please share it and if you would like to hear more from me consider subscribing to my newsletter below. I generally write about container technology, and about different programming patterns in Go and/or Python.
 
 Abrazos!
 
