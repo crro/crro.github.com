@@ -16,7 +16,7 @@ type Car struct {
 	NumberOfSeats int
 	Insurance string
 	Owners map[string]string
-  SerialNumber string
+	SerialNumber string
 }
 
 // Transformer is the interface that we are going to use to 
@@ -65,7 +65,7 @@ func collectTransformations() []Transformer {
 
 {% endhighlight %}
 
-But, what if we had simpler transformers that did not required an entire struct to perform the transformation? For that we can have a function implement our interface and add it to our list!
+But, what if we had simpler transformers that did not required an entire struct to perform the transformation? Say we need to generate the serial number or add the current year to our car. For that we can have a function implement our interface and add it to our list of transformers!
 
 {% highlight go %}
 
@@ -105,8 +105,33 @@ func applyTransformations(cars []Car, transformations []Transform) {
 }
 {% endhighlight %}
 
-The last thing to mention is that we can use the same pattern for testing.
+I think this post is long enough already but the last thing I want to mention is that you can use a similar pattern for testing your code. If you are working with a single method interface, using this pattern can save you quite a bit of time! 
 
+If you liked this please subscribe to my newsletter to stay on the loop. I generally write about programming in Go and Python, containers in both English and Spanish.
+
+Abrazos!
+David
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://github.us10.list-manage.com/subscribe/post?u=85f552eee256467fd023266f3&amp;id=af3bc86a4e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_85f552eee256467fd023266f3_af3bc86a4e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
@@ -116,7 +141,7 @@ The last thing to mention is that we can use the same pattern for testing.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = 'crro.github.io';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.url = 'https://crro.github.io';  // Replace PAGE_URL with your page's canonical URL variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
