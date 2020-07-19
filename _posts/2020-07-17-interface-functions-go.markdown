@@ -116,8 +116,7 @@ The last thing to mention is that we can use the same pattern for testing.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = 'https://crro.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = '{{ page.title }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = 'crro.github.io';  // Replace PAGE_URL with your page's canonical URL variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
