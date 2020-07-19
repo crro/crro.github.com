@@ -1,8 +1,0 @@
----
-layout: post
-title: "hola mi amorciquitinga!"
-date: 2019-03-09 19:18:09 -0500
-categories: jekyll update
----
-
-queh queh queh, i have a blog and i love youuuuu <3
