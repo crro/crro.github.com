@@ -93,14 +93,16 @@ func collectTransformations() []Transformer {
 
 {% endhighlight %}
 
+Finally, we can then apply all of our transformations in a single function:
+
 {% highlight go %}
-func applyTransformations(cars []Car, transformations []Transform) { 
-  
+func applyTransformations(cars []Car, transformations []Transform) {   
   for i := range cars {
     for _, t := range transformations {
       cars[i] = t.Transform(cars[i])
     }
   }
 }
-  
 {% endhighlight %}
+
+The last thing to mention is that we can use the same pattern for testing.
