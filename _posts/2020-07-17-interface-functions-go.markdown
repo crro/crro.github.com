@@ -110,6 +110,7 @@ I think this post is long enough already but the last thing I want to mention is
 If you liked this please subscribe to my newsletter to stay on the loop. I generally write about programming in Go and Python, containers in both English and Spanish.
 
 Abrazos!
+
 David
 
 <!-- Begin Mailchimp Signup Form -->
