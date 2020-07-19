@@ -3,7 +3,13 @@ layout: post
 title: About
 permalink: /about/
 ---
-Hi! I'm a software engineer originally from Durango Mexico. I've been programming for about 9 years and I like to write about container technology and about interesting programming patterns in Golang and Python. I am also extremely passionate about computer science education, expecially about making it more accesible in Latin America. If you would like to learn more please subscribe and you wont be bored!
+Hi! I'm a software engineer originally from Durango, Mexico. 
+
+I've been programming for about 9 years and I like to write about container technology and about interesting programming patterns in Golang and Python. 
+
+I am also extremely passionate about computer science education, expecially about making it more accesible in Latin America. 
+
+If you would like to learn more please subscribe and you won't be bored!
 
 
 <!-- Begin Mailchimp Signup Form -->
