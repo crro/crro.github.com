@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to make a function implement an interface in Go"
+title: "Polymorphism with Functions in Go"
 date: 2020-07-17 11:46:09 -0500
 comments: true
 author: crro
@@ -66,7 +66,7 @@ func collectTransformations() []Transformer {
 
 {% endhighlight %}
 
-But, what if we had simpler transformers that did not required an entire struct to perform the transformation? Say we need to generate the serial number or add the current year to our car. For that we can have a function implement our interface and add it to our list of transformers!
+But, what if we had simpler transformers that did not require an entire struct to perform the transformation? Say we need to generate the serial number or add the current year to our car. For that we can have a function implement our interface and add it to our list of transformers!
 
 {% highlight go %}
 
